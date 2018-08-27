@@ -3,6 +3,9 @@ body{
   margin: 0;
   font-family: 'Maven Pro', serif;
 }
+.hidden{
+  display: none;
+}
 .f-12{
   font-size: 12px !important;
 }

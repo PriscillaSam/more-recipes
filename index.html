@@ -28,7 +28,7 @@
               <a href="#explore-head-section" class="nav-link">Favourite</a>
             </li>
             <li class="nav-item">
-              <a href="#create-head-section" class="nav-link">Create</a>
+              <a href="#create-head-section" class="nav-link" data-toggle="modal" data-target="#exampleModal">Create</a>
             </li>
           </ul>
         </div>
@@ -544,9 +544,62 @@
         </div>
       </div>
     </section>
-
-   </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-pencil fa-fw"></i>Add a recipe</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+     
+            <div id="resDiv" class="alert alert-success hidden" >
+              <p id="dataRes"></p>
+            </div>
+          
+            <form id="recipe-form">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Title</label>
+                  <input type="text" class="form-control" id="title" placeholder="Enter Title">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Category</label>
+                  <input type="text" class="form-control" id="category" placeholder="Enter Category">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Description</label>
+                    <input type="text" class="form-control" id="description" placeholder="Enter Description">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleInputPassword1">Preparation Time</label>
+                      <input type="text" class="form-control" id="prepTime" placeholder="Enter Preparation Time">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Ingredients</label>
+                        <input type="text" class="form-control" id="ingredients" placeholder="Enter Ingredients">
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleInputPassword1">Directions</label>
+                          <input type="text" class="form-control" id="directions" placeholder="Enter Directions">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Recipe Image</label>
+                            <input type="text" class="form-control" id="image" placeholder="Enter Image Url">
+                          </div>
+        </div>
+          <a href='#' class="btn btn-warning" data-dismiss="modal">Dismiss</a>
+          <button type="submit"  class="btn btn-info" id="addRecipe">Add</button>
+      </form>
+      </div>
+    </div>
+  </div>
    <script src="./assets/js/jquery.js"></script>
    <script src="./assets/js/bootstrap.min.js"></script>
+
+   <script src="./assets/js/add.js"></script>
 </body>
 </html>
