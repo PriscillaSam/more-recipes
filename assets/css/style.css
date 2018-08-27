@@ -16,15 +16,14 @@ body{
 .navbar-dark .navbar-nav .nav-link {
   color:#fae3e3;
 }
-.navbar-light .navbar-brand {
-  color: #fff;
-}
+
 .navbar-dark .navbar-brand {
   color: #fae3e3 !important;
+  font-family: 'Lobster Two', cursive;
 }
 #home-section{
   position: relative;
-  background: url(../images/spag.jpg) no-repeat;
+  background: url(../images/home-section.jpeg) no-repeat;
   background-color: #000;
   min-height: 500px;
   background-size: cover;
@@ -184,6 +183,7 @@ body{
 }
 /*footer section*/
 #footer{
+  margin-top: 40px;
   position: relative;
   background-color:#1F487E;
   padding: 20px 0px;
