@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <title>More-Recipes</title>
+</head>
+<body>
+   <div id="recipe">
+    <nav class="navbar navbar-expand-sm bg-orange navbar-light">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">More-Recipes</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+              <a href="#explore-head-section" class="nav-link">Favourite</a>
+            </li>
+            <li class="nav-item">
+              <a href="#create-head-section" class="nav-link">Create</a>
+            </li>           
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="recipe-detail">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="recipe__card">
+              <div class="recipe__thumb">
+                <img class="img-fluid" src="./assets/images/recipes/spices.jpg" alt="Spices">
+              </div>
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="recipe__thumb_name">
+                    <h5 class="pl-2">Learn More</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="recipe__opinions">
+              </div>
+              <div class="review__section">
+                <div class="row px-2">
+                    <div class="col align-self-start">
+                        <!-- <button class="btn review__btn"><i class="fa fa-comment-o"></i> All Reviews(3)</button> -->
+                    </div>
+                    <div class="col align-self-center">
+                    </div>
+                    <div class="col align-self-end pr-0">
+                        <button class="btn review__btn"><i class="fa fa-pencil-square-o"></i> Add Review</button>
+                    </div>
+                </div>
+                <div class="review__comments">
+                  <div class="review_comment_each">
+                  </div>
+                </div>
+              </div>
+            </div><!--end recipe-card -->
+          </div>
+          <div class="col-md-6">
+            <div class="recipe__details">
+              <div class="recipe__info">
+                <h3>Information</h3>
+                <p class="recipe__ratings">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </p>
+                <h5>About recipe:</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolorem maiores ut. Rem cupiditate esse recusandae animi fugit eaque doloremque? Cupiditate dicta, ea culpa asperiores dolore neque cumque quis consectetur...<a class="read__more" href="#">Read more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </div>
+   <script src="./assets/js/jquery.js"></script>
+   <script src="./assets/js/bootstrap.min.js"></script>
+   <script src="./assets/js/main.js"></script>
+</body>
+</html>
