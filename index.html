@@ -735,7 +735,12 @@
           </button>
         </div>
         <div class="modal-body">
-            <form>
+     
+            <div id="resDiv" class="alert alert-success hidden" >
+              <p id="dataRes"></p>
+            </div>
+          
+            <form id="recipe-form">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Title</label>
                   <input type="text" class="form-control" id="title" placeholder="Enter Title">
@@ -765,10 +770,8 @@
                             <input type="text" class="form-control" id="image" placeholder="Enter Image Url">
                           </div>
         </div>
-        <div class="modal-footer">
-          <a class="btn btn-default" data-dismiss="modal">Close</a>
-          <button type="button" class="btn btn-info">Add</button>
-        </div>
+          <a href='#' class="btn btn-warning" data-dismiss="modal">Dismiss</a>
+          <button type="submit"  class="btn btn-info" id="addRecipe">Add</button>
       </form>
       </div>
     </div>
@@ -776,5 +779,6 @@
    <script src="./assets/js/jquery.js"></script>
    <script src="./assets/js/bootstrap.min.js"></script>
    <script src="./assets/js/main.js"></script>
+   <script src="./assets/js/add.js"></script>
 </body>
 </html>
